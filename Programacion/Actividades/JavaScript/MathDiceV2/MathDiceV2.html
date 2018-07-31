@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Math Dice</title>
+    <style>
+    div{
+      color: #ec0000;
+    }
+    </style>
+  </head>
+  <body>
+    <center><h1 style="font-size:50px;" if="titulo">Bienvenido a MathDice</h1></center>
+    <center><b><h2 id="num_adivinar"></h2></b></center>
+    <center><p id="contador_html" style="font-size:20px;">Operaciones realizadas:</p></center>
+    <center><label style="font-size:20px;" id="num_disponibles">Los números disponibles son:</label></center>
+    <center><p id=dados_tirados style="font-size:20px;"></p></center>
+    <center><form id="letra">
+      <input type="text" id="numero1" size="5" value="">
+      <button type="button" name="button" onclick="suma()">+</button>
+      <button type="button" name="button" onclick="resta()">-</button>
+      <input type="text" id="numero2" size="5" value="">
+      <br><br>
+      <input type="button" value="Reiniciar página" onClick="document.location.reload(true)">
+      <center><p id="resultado" style="font-size:20px;"></p></center>
+      <center><div id="datos_extra"></div></center>
+    </form></center>
+    <script type="text/javascript" src="MathDiceV2.js"></script>
+  </body>
+</html>
